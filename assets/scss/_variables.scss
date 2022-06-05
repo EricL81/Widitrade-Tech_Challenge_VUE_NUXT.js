@@ -12,18 +12,3 @@ $color-background: #f8f8fc;
 $color-primary: #22a2a2;
 $color-secondary: #1b8080;
 $color-accent: #4fc2c2;
-
-html,
-body {
-	padding: 0;
-	margin: 0;
-	font-family: $ff-inter;
-}
-
-*,
-*::before,
-*::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}

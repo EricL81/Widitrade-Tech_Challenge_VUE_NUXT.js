@@ -43,7 +43,7 @@ export default {
     ButtonItem,
   },
   // eslint-disable-next-line prettier/prettier
-  data () {
+  data() {
     return {
       values: { user: '', password: '' },
       errors: {},
@@ -62,12 +62,12 @@ export default {
 
   methods: {
     // eslint-disable-next-line prettier/prettier
-    togglePasswordIsVisible () {
+    togglePasswordIsVisible() {
       this.passwordIsVisible = !this.passwordIsVisible;
     },
 
     // eslint-disable-next-line prettier/prettier
-    validate (values) {
+    validate(values) {
       const errors = {};
 
       if (!values.user) {
@@ -86,7 +86,7 @@ export default {
     },
 
     // eslint-disable-next-line prettier/prettier
-    onSubmit (e) {
+    onSubmit(e) {
       e.preventDefault();
       this.errors = this.validate(this.values);
       this.isSubmitted = true;
@@ -96,110 +96,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.loginForm {
-  margin-top: 4.5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 31px;
-
-  .inputGroup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0.5rem;
-    padding: 0;
-    position: relative;
-
-    img {
-      position: absolute;
-      right: 12px;
-      top: 41px;
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-    }
-
-    label {
-      font-family: $ff-mulish;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 150%;
-      color: $color-label;
-      order: 0;
-      flex: none;
-      flex-grow: 0;
-    }
-
-    input {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0.75rem 1rem;
-      background: #ffffff;
-      border: 1px solid $color-line;
-      border-radius: 1rem;
-      width: 100%;
-      height: 48px;
-      flex: none;
-      order: 1;
-      align-self: stretch;
-      flex-grow: 0;
-      caret-color: $color-accent;
-      font-size: 1rem;
-      color: $color-body;
-      background: $color-background;
-
-      &::placeholder {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 150%;
-        color: $color-placeholder;
-        flex: none;
-        order: 0;
-        flex-grow: 1;
-      }
-
-      &:focus {
-        outline: 2px solid $color-accent;
-        background: #ffffff;
-      }
-    }
-
-    .error {
-      padding: 0 20px;
-      flex: none;
-      order: 2;
-      flex-grow: 0;
-      font-family: $ff-mulish;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 18px;
-      color: $color-primary;
-      margin-top: 8.5px;
-    }
-  }
-}
-
-@media only screen and (min-width: 744px) {
-  .loginForm {
-    width: 408px;
-    height: 285px;
-    margin: 0 auto;
-    position: relative;
-    top: 142px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .loginForm {
-    width: 356px;
-    height: 285px;
-    margin: 0 auto;
-    top: 478px - 82px;
-  }
-}
+@import '~assets/scss/components/loginForm';
 </style>

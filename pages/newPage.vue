@@ -13,10 +13,5 @@ export default {
 </script>
 
 <style lang="scss">
-.newPage {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import '~assets/scss/pages/newPage';
 </style>
