@@ -1,5 +1,45 @@
 # widitrade-tech-challenge-vue-nuxt
 
+## Live web URL: []
+
+## Welcome! 👋
+
+Thanks for checking out this front-end coding challenge.
+
+This is a technical challenge I realized for an interview with the company Widitrade.
+
+The Figma design file can be found under: [https://www.figma.com/file/5BghJ9wQC72j4M5nsOWSr0/Conversion?node-id=0%3A1]
+
+## The challenge
+
+The challenge was to build out this responsive Login page (mobile + tablet + desktop) from the design provided in the Figma file.
+
+The user / website should be able to:
+
+- View the optimal layout depending on the device's screen size
+- Insert the username and the password in the corresponding fields
+- Toggle whether or not the password is visible
+- Click on the Login button to verify if the fields are not empty
+- Be redirected to a new page if the Login is valid, after Login form is submitted.
+
+For this challenge I chose to use Vue and Nuxt.js to practice on Vue, state management and form validation and discover the Nuxt.js framework which I have never used before.
+
+I also deployed this app on Vercel for the first time.
+
+## Preview Snapshots
+
+### Mobile Layout: 375x812px
+
+![mobile layout](./assets/images/Mobile.png)
+
+### Mobile Layout: 744x1133px
+
+![tablet layout](./assets/images/Tablet.png)
+
+### Mobile Layout: 1440x1024px
+
+![desktop layout](./assets/images/Desktop.png)
+
 ## Build Setup
 
 ```bash

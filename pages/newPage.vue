@@ -7,9 +7,9 @@
 <script>
 export default {
   head: {
-    title: 'Widitrade New Page'
-  }
-}
+    title: 'Widitrade New Page',
+  },
+};
 </script>
 
 <style lang="scss">
