@@ -1,6 +1,6 @@
 # widitrade-tech-challenge-vue-nuxt
 
-## Live web URL: []
+## Live web URL: [https://widitrade-tech-challenge-vue-nuxt-js.vercel.app/]
 
 ## Welcome! 👋
 
